@@ -34,6 +34,8 @@ public class Encrypter {
      */
     public void encrypt(String inputFilePath, String encryptedFilePath) throws Exception {
         //TODO: Call the read method, encrypt the file contents, and then write to new file
+        readFile(encryptedFilePath);
+        writeFile(inputFilePath, encryptedFilePath);
     }
 
     /**
@@ -45,6 +47,8 @@ public class Encrypter {
      */
     public void decrypt(String messageFilePath, String decryptedFilePath) throws Exception {
         //TODO: Call the read method, decrypt the file contents, and then write to new file
+        readFile(decryptedFilePath);
+        writeFile(messageFilePath, decryptedFilePath);
     }
 
     /**
@@ -57,6 +61,7 @@ public class Encrypter {
     private static String readFile(String filePath) throws Exception {
         String message = "";
         //TODO: Read file from filePath
+        readFile(filePath);
         return message;
     }
 
@@ -68,6 +73,7 @@ public class Encrypter {
      */
     private static void writeFile(String data, String filePath) {
         //TODO: Write to filePath
+        writeFile(data, filePath);
     }
 
     /**
